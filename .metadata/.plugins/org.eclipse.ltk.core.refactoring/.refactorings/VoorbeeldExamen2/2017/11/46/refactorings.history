@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;reeksletter&apos; in &apos;be.pxl.voorbeeldexamen2.vraag2.VoorbeeldExamen2Vraag2.main(...)&apos; to &apos;reeksLetter&apos;&#x0D;&#x0A;- Original project: &apos;VoorbeeldExamen2&apos;&#x0D;&#x0A;- Original element: &apos;be.pxl.voorbeeldexamen2.vraag2.VoorbeeldExamen2Vraag2.main(String[]).reeksletter&apos;&#x0D;&#x0A;- Renamed element: &apos;reeksletter&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;reeksletter&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;be.pxl.voorbeeldexamen2.vraag2{VoorbeeldExamen2Vraag2.java[VoorbeeldExamen2Vraag2~main~\[QString;@reeksletter!462!483!467!477!C!0!false" name="reeksLetter" references="true" stamp="1510583295994" version="1.0"/>
+</session>

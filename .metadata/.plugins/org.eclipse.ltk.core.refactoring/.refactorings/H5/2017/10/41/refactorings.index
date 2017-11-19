@@ -1,0 +1,22 @@
+1507636956562	Delete element
+1507637274631	Rename type 'H5Opdr13'
+1507639052334	Delete element
+1507640057699	Delete element
+1507660314730	Rename local variable 'gewicht'
+1507667252221	Rename local variable 'tijd'
+1507667889879	Rename local variable 'tijdSecondenSnelsteRenner'
+1507667902913	Rename local variable 'tijdSeconden'
+1507668435416	Rename local variable 'i'
+1507668611492	Rename local variable 'getal'
+1507713994470	Rename local variable 'celsius'
+1507792146940	Rename type 'H5Opdr16'
+1507795541399	Extract method 'berekenFaculteit'
+1507795678523	Extract method 'berekenFaculteit'
+1507796748743	Extract method 'berekenEindejaarspremie'
+1507796903236	Extract method 'berekenEindejaarspremie'
+1507800748810	Extract method 'tekenDriehoek'
+1507814124301	Rename local variable 'uitgavejaar'
+1507832089650	Rename local variable 'lengteVrouw'
+1508019251017	Rename local variable 'getalnabewerking'
+1508019437723	Extract method 'tekenGevuldeRechthoek'
+1508019490699	Extract method 'tekenLegeRechthoek'

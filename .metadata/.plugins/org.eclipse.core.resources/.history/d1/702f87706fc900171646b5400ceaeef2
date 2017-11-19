@@ -1,0 +1,59 @@
+package be.pxl.computersystems.binairhexadecimaaloctaalnaardecimaal;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class BinairHexadecimaalOctaalNaarDecimaal {
+
+		public static void main(String[] args) {
+			Scanner keyboard = new Scanner(System.in);
+			Random rand = new Random();
+
+			int willekeurigGetal = rand.nextInt(256);
+			
+			String binairWillekeurigGetal = Integer.toBinaryString(willekeurigGetal);
+			
+			System.out.println("Het decimaal getal voor " + binairWillekeurigGetal + " (binair) is : ");
+			int binairNaarDecimaalGetal = keyboard.nextInt();
+			
+			int binairOplossing = Integer.parseInt(binairWillekeurigGetal, 2);
+			
+			if (binairNaarDecimaalGetal == binairOplossing) {
+				System.out.println("\033[32m Correct \033[0m");
+			} else {
+				System.out.println(String.format("\033[31m Fout, de oplossing moest %d zijn \033[0m", binairOplossing));
+			}
+			
+			willekeurigGetal = rand.nextInt(256);
+			
+			String hexadecimaalWillekeurigGetal = Integer.toHexString(willekeurigGetal);
+			
+			System.out.println("Het decimaal getal voor " + hexadecimaalWillekeurigGetal + " (hexadecimaal) is : ");
+			int hexadecimaalNaarDecimaalGetal = keyboard.nextInt();
+			
+			int hexadecimaalOplossing = Integer.parseInt(hexadecimaalWillekeurigGetal, 16);
+			
+			if (hexadecimaalNaarDecimaalGetal == hexadecimaalOplossing) {
+				System.out.println("\033[32m Correct \033[0m");
+			} else {
+				System.out.println(String.format("\033[31m Fout, de oplossing moest %d zijn \033[0m", hexadecimaalOplossing));
+			}
+			
+			willekeurigGetal = rand.nextInt(256);
+			
+			String octaalWillekeurigGetal = Integer.toOctalString(willekeurigGetal);
+			
+			System.out.println("Het decimaal getal voor " + octaalWillekeurigGetal + " (octaal) is : ");
+			int octaalNaarDecimaalGetal = keyboard.nextInt();
+			
+			int octaalOplossing = Integer.parseInt(octaalWillekeurigGetal, 8);
+			
+			if (octaalNaarDecimaalGetal == octaalOplossing) {
+				System.out.println("\033[32m Correct \033[0m");
+			} else {
+				System.out.println(String.format("\033[31m Fout, de oplossing moest %d zijn \033[0m", octaalOplossing));
+			}
+			
+			keyboard.close();
+		}
+	}

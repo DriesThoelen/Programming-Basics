@@ -1,0 +1,23 @@
+package be.pxl.h5.exoef18;
+
+public class H5ExOef18 {
+
+	public static void main(String[] args) {
+
+//		int getal = 1;
+//		int result1 = 0;
+//		int result2 = 0;
+//
+//		while ((result1 < 1500) && (result2 < 1500)) {
+//			while (result1 <= result2) {
+//				result1 += getal;
+//				System.out.print(result1 + " ");
+//				while (result2 < result1) {
+//					result2 += getal;
+//					System.out.print(result2 + " ");
+//					getal = result1;
+//				}
+//			}
+//		}
+//	}
+//}

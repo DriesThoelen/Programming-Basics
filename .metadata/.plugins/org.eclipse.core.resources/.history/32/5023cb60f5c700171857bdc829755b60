@@ -1,0 +1,25 @@
+package be.pxl.h5.opdr14;
+
+import java.util.Scanner;
+
+public class H5Opdr14b {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int b, dubbel;
+		 for (int a = 1; a <= 5; a++)
+		 System.out.println("Geef een getal in: ");
+		 b = keyboard.nextInt();
+		 dubbel = b * 2;
+		 System.out.println("Het dubbel is: " + dubbel);
+
+//		for (int a = 1; a <= 5; a++) {
+//			System.out.println("Geef een getal in: ");
+//			b = keyboard.nextInt();
+//			dubbel = b * 2;
+//			System.out.println("Het dubbel is: " + dubbel);
+//		}
+
+		keyboard.close();
+	}
+}

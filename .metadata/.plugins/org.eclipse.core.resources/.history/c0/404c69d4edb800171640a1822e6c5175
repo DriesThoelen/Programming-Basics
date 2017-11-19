@@ -1,0 +1,14 @@
+package be.pxl.h6.opdr4;
+
+public class H6Opdr4 {
+
+	public static void main(String[] args) {
+		StringBuilder s1 = new StringBuilder("This is my first line of text");
+		StringBuilder s2 = new StringBuilder("This is my second line of text");
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		
+		
+	}
+}

@@ -1,0 +1,29 @@
+package be.pxl.h6.opdr4;
+
+public class H6Opdr4 {
+
+	public static void main(String[] args) {
+		StringBuilder s1 = new StringBuilder("This is my first line of text");
+		StringBuilder s2 = new StringBuilder("This is my second line of text");
+
+		System.out.println(s1);
+		System.out.println(s2);
+
+		s1.append(" and this is what I added.");
+		System.out.println(s1);
+
+		s2.reverse();
+		System.out.println(s2);
+		
+		int s1lengte = s1.length();
+		int index = 0;
+		
+		for(int count = 0; count < s1lengte; count++) {
+			index = s1.indexOf(" ", count);
+		}
+		
+		s1.replace(0, index, "");
+		
+		System.out.println(s1);
+	}
+}

@@ -1,0 +1,47 @@
+package be.pxl.computersystems.biniarnaarnegatiefgetallen;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class BinairNaarNegatieveGetallen {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		Random rand = new Random();
+		
+		String binairWillekeurigNegatiefGetalSyso;
+		int binairOplossing;
+		
+		String ANSI_RESET = "\033[0m";
+		String ANSI_RED = "\033[1;31m";
+		String ANSI_GREEN = "\033[1;32m";
+
+//		int willekeurigGetal = rand.nextInt(256);
+//		int willekeurigNegatiefGetal = willekeurigGetal - 2 * willekeurigGetal;
+		
+		int willekeurigGetal = 129;
+		int willekeurigNegatiefGetal = -129;
+		
+		String binairWillekeurigNegatiefGetal = Integer.toBinaryString(willekeurigNegatiefGetal);
+		if (willekeurigGetal < 128) {
+			binairWillekeurigNegatiefGetalSyso = binairWillekeurigNegatiefGetal.replace("111111111111111111111111", "");
+			binairWillekeurigNegatiefGetal = binairWillekeurigNegatiefGetal.replace("111111111111111111111111", "");
+			binairOplossing = (byte) Integer.parseInt(binairWillekeurigNegatiefGetal, 2);
+		} else {
+			binairWillekeurigNegatiefGetalSyso = binairWillekeurigNegatiefGetal.replace("11111111111111111111111", "");
+			binairWillekeurigNegatiefGetal = binairWillekeurigNegatiefGetal.replace("111111111111111111111111", "");
+			binairOplossing = (byte) Integer.parseInt(binairWillekeurigNegatiefGetal, 2);
+		}
+		
+		System.out.println("Het negatief getal voor " + binairWillekeurigNegatiefGetalSyso + " (binair 2-component) is : ");
+		int binairNaarDecimaalGetal = keyboard.nextInt();
+		
+		if (binairNaarDecimaalGetal == binairOplossing) {
+			System.out.println(ANSI_GREEN + "Correct" + ANSI_RESET);
+		} else {
+			System.out.println(ANSI_RED + String.format("Fout, de oplossing moest %d zijn", binairOplossing) + ANSI_RESET);
+		}
+		
+		keyboard.close();
+	}
+}

@@ -1,0 +1,35 @@
+package be.pxl.h6.opdr4;
+
+public class H6Opdr4 {
+
+	public static void main(String[] args) {
+		StringBuilder s1 = new StringBuilder("This is my first line of text");
+		StringBuilder s2 = new StringBuilder("This is my second line of text");
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		
+		s1.append("and this is what I added.");
+		System.out.println(s1);
+		
+		s2.reverse();
+		System.out.println(s2);
+		
+		int stringBuilder1Lengte = s1.length();
+		
+		for(int count1 = 0; count1 <= stringBuilder1Lengte; count1++) {
+			int indexspace = s1.indexOf("t", count1);
+			s1.replace(indexspace, indexspace + 1, "");
+		}
+		System.out.println(s1);
+		
+		int stringBuilder2Lengte = s2.length();
+		
+		for(int count2 = 0; count2 <= stringBuilder2Lengte; count2++) {
+			int index = s2.indexOf("t", count2);
+			s2.insert(index, 't');
+		}
+		
+		System.out.println(s2);
+	}
+}
